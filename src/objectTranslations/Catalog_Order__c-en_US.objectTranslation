@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Catalog Order</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Catalogs Orders</value>
+    </caseValues>
+    <fields>
+        <label><!-- Catalog --></label>
+        <name>Catalog_Id__c</name>
+        <relationshipLabel><!-- Catalogs Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Count --></label>
+        <name>Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- OrderId --></label>
+        <name>OrderId__c</name>
+        <relationshipLabel><!-- Catalogs Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Order_Id --></label>
+        <name>Order_Id__c</name>
+        <relationshipLabel><!-- Catalogs Orders --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

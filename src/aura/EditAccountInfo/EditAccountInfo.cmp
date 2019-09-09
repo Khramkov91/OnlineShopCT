@@ -1,0 +1,10 @@
+<!--
+ - Created by user on 09-Sep-19.
+ -->
+
+<aura:component description="EditAccountInfo">
+
+    <aura:attribute type="String" name="asd"/>
+    <aura:attribute type="String" name="ads"/>
+
+</aura:component>

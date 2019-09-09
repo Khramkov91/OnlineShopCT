@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Catalog</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Catalogs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Category --></label>
+        <name>Category__c</name>
+        <picklistValues>
+            <masterLabel>18+</masterLabel>
+            <translation><!-- 18+ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entertainment</masterLabel>
+            <translation><!-- Entertainment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Household chemicals</masterLabel>
+            <translation><!-- Household chemicals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Products</masterLabel>
+            <translation><!-- Products --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cost --></label>
+        <name>Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity --></label>
+        <name>Quantity__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Quantity should be greater  than 0 --></errorMessage>
+        <name>ValidQuantity</name>
+    </validationRules>
+</CustomObjectTranslation>

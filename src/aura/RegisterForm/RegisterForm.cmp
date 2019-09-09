@@ -1,0 +1,28 @@
+<aura:component description = "RegisterForm" 
+                controller="RegisterController"
+                implements = "flexipage:availableForAllPageTypes" >
+     <aura:attribute name="accReg" type="Account"/>
+     <div class="mainDiv">
+	   <lightning:input aura:id="regForm" label="Name"
+                     name="name"
+                     value="{!v.accReg.Name}"
+                     required="true"/>
+       <lightning:input aura:id="regForm" label="Phone"
+                     name="phone"
+                     value="{!v.accReg.Phone}"
+                     required="true"/>
+       <lightning:input aura:id="regForm" label="Login"
+                     name="login"
+                     value="{!v.accReg.Login__c}"
+                     required="true"/>
+       <lightning:input aura:id="regForm" label="Password"
+                     name="password"
+                     value="{!v.accReg.Password__c}"
+                     required="true"/>
+       <lightning:button label="Register"
+                          onclick="{!c.registerAcc}"/>
+         
+         <div aura:id="Registation"
+             class="Registration"/>
+    </div>
+</aura:component>

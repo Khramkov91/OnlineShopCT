@@ -1,0 +1,23 @@
+<aura:component description = "LoginForm" 
+                controller="LoginController"
+                implements = "flexipage:availableForAllPageTypes">
+                
+    <aura:attribute name="accLogin" type="Account"/>
+    <div class="mainDiv">
+        <lightning:input aura:id="LoginForm" label="Login"
+                     name="login"
+                     value="{!v.accLogin.Login__c}"
+                     required="true"/>
+        <lightning:input aura:id="LoginForm" label="Password"
+                     name="login"
+                     value="{!v.accLogin.Password__c}"
+                     required="true"/>
+    
+        <lightning:button label="Login"
+                          onclick="{!c.loginClick}"/>
+        <lightning:button label="Register"
+                          onclick="{!c.regClick}"/>
+        <div aura:id="Registation"
+             class="Registration"/>
+    </div>
+</aura:component>
