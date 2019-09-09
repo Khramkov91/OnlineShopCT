@@ -176,30 +176,6 @@
         <type>Number</type>
         <unique>false</unique>
     </fields>
-    <fields>
-        <fullName>OrderId__c</fullName>
-        <deleteConstraint>Restrict</deleteConstraint>
-        <externalId>false</externalId>
-        <label>OrderId</label>
-        <referenceTo>Order__c</referenceTo>
-        <relationshipLabel>Catalogs Orders</relationshipLabel>
-        <relationshipName>Catalogs_Orders</relationshipName>
-        <required>true</required>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>Order_Id__c</fullName>
-        <deleteConstraint>Restrict</deleteConstraint>
-        <externalId>false</externalId>
-        <label>Order_Id</label>
-        <referenceTo>Order</referenceTo>
-        <relationshipLabel>Catalogs Orders</relationshipLabel>
-        <relationshipName>Catalogs_Orders</relationshipName>
-        <required>true</required>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
-    </fields>
     <label>Catalog Order</label>
     <listViews>
         <fullName>All</fullName>

@@ -22,7 +22,7 @@
     <tabs>Catalog__c</tabs>
     <tabs>Account_Card__c</tabs>
     <tabs>Catalog_Order__c</tabs>
-    <tabs>Order__c</tabs>
+    <tabs>OrderCT__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LightningSalesConsole_UtilityBar</utilityBar>
     <workspaceConfig>
@@ -39,7 +39,7 @@
             <tab>Catalog__c</tab>
         </mappings>
         <mappings>
-            <tab>Order__c</tab>
+            <tab>OrderCT__c</tab>
         </mappings>
         <mappings>
             <tab>standard-Account</tab>

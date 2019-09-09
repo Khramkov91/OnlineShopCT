@@ -28,6 +28,6 @@
     <tabs>Catalog__c</tabs>
     <tabs>Account_Card__c</tabs>
     <tabs>Catalog_Order__c</tabs>
-    <tabs>Order__c</tabs>
+    <tabs>OrderCT__c</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>
