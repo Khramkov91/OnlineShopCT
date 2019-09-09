@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="154b95ce-2625-4e57-9106-a14dba6cd7e0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/aura/EditAccountInfo/EditAccountInfo.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/EditAccountInfo/EditAccountInfo.cmp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +33,6 @@
                 <ConnectionWorkspaceSettings>
                   <option name="buildSuccessDatesBySourceRootRelativePath">
                     <map>
-                      <entry key="AURADEFINITIONBUNDLE:EDITACCOUNTINFO" value="1568023778798" />
                     </map>
                   </option>
                 </ConnectionWorkspaceSettings>
@@ -46,9 +44,10 @@
     </option>
   </component>
   <component name="ProjectId" id="1QazmbbRpfakfjUT9tliWhf8lyp" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="IlluminatedCloudApplicationConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -73,7 +72,6 @@
       <option name="presentableId" value="Default" />
       <updated>1568023654871</updated>
       <workItem from="1568023657160" duration="74000" />
-      <workItem from="1568023740400" duration="725000" />
     </task>
     <servers />
   </component>
@@ -85,7 +83,6 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
           </value>
         </entry>
       </map>
