@@ -1,4 +1,3 @@
-
 public with sharing class LoginController {
     public static List<Account> getAccount(){
         return new List<Account>();
@@ -11,6 +10,10 @@ public with sharing class LoginController {
             }
         }
         return null;
+    }
+
+    public static String checkLogin(String login, String password){
+      return null;
     }
 
 }
