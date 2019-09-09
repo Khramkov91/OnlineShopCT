@@ -3,5 +3,4 @@
  -->
 
 <aura:application description="OnlineShopCT" extends="force:slds">
-    <c:AccountList />
 </aura:application>

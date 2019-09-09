@@ -8,6 +8,7 @@
         <option name="defaultSourceRootUrl" value="file://$MODULE_DIR$/src" />
         <option name="moduleContents">
           <ModuleContents>
+            <option name="contentSelectionType" value="SELECTED" />
             <option name="manifest">
               <Manifest>
                 <option name="types">
@@ -28,11 +29,11 @@
                       <option name="entries">
                         <list>
                           <MetadataEntry>
-                            <option name="name" value="AccountsController" />
+                            <option name="name" value="LoginController" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="LoginController" />
+                            <option name="name" value="PaymentforgoodsController" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -106,23 +107,19 @@
                       <option name="entries">
                         <list>
                           <MetadataEntry>
-                            <option name="name" value="AccountList" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="EditAccountInfo" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="EditOrder" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
                             <option name="name" value="LoginForm" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="OnlineShopCT" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Paymentforgoods" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="PaymentforgoodsApp" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -172,13 +169,6 @@
                       <option name="wildcard" value="false" />
                     </MetadataType>
                     <MetadataType>
-                      <option name="entries">
-                        <list>
-                          <MetadataEntry>
-                            <option name="name" value="SelfSignedCert_09Sep2019_095425" />
-                          </MetadataEntry>
-                        </list>
-                      </option>
                       <option name="name" value="Certificate" />
                       <option name="wildcard" value="false" />
                     </MetadataType>
@@ -363,9 +353,6 @@
                             <option name="name" value="Catalog_Order__c.Count__c" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="Catalog_Order__c.OrderId__c" />
-                          </MetadataEntry>
-                          <MetadataEntry>
                             <option name="name" value="Catalog_Order__c.Order_Id__c" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -418,9 +405,6 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Opportunity.TrackingNumber__c" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="Order__c.AccountId__c" />
                           </MetadataEntry>
                         </list>
                       </option>
@@ -641,9 +625,6 @@
                             <option name="name" value="OrderItem" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="Order__c" />
-                          </MetadataEntry>
-                          <MetadataEntry>
                             <option name="name" value="OrgDeleteRequest" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -738,9 +719,6 @@
                           <MetadataEntry>
                             <option name="name" value="Catalog__c-en_US" />
                           </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="Order__c-en_US" />
-                          </MetadataEntry>
                         </list>
                       </option>
                       <option name="name" value="CustomObjectTranslation" />
@@ -772,9 +750,6 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Catalog__c" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="Order__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="standard-Account" />
@@ -1291,9 +1266,6 @@
                             <option name="name" value="OrderItem-Order Product Layout" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="Order__c-Order Layout" />
-                          </MetadataEntry>
-                          <MetadataEntry>
                             <option name="name" value="Pricebook2-Price Book Layout" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -1548,9 +1520,6 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Order.AllOrders" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="Order__c.All" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Product2.AllProducts" />
@@ -2194,9 +2163,6 @@
                             <option name="name" value="Order" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="Order__c" />
-                          </MetadataEntry>
-                          <MetadataEntry>
                             <option name="name" value="User" />
                           </MetadataEntry>
                         </list>
@@ -2452,9 +2418,6 @@
                             <option name="name" value="Order" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="Order__c" />
-                          </MetadataEntry>
-                          <MetadataEntry>
                             <option name="name" value="Solution" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -2548,7 +2511,7 @@
       <excludeFolder url="file://$MODULE_DIR$/temp" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
     </content>
-    <orderEntry type="jdk" jdkName="IlluminatedCloud (OnlineShopCT/OnlineShop)" jdkType="IlluminatedCloud" />
+    <orderEntry type="jdk" jdkName="IlluminatedCloud (OnlineShop/OnlineShop)" jdkType="IlluminatedCloud" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

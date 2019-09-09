@@ -1,0 +1,39 @@
+<!--
+ - Created by Pavel on 09.09.2019.
+ -->
+
+<aura:component description="Paymentforgoods" controller="PaymentforgoodsController">
+    <aura:attribute name="cards" type="List" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <table class="slds-table slds-table_bordered slds-table_striped slds-table_cell-buffer slds-table_fixed-layout">
+        <thead>
+        <tr class="slds-text-heading_label">
+            <th scope="col"><div class="slds-truncate" title="Name">Name</div></th>
+            <th scope="col"><div class="slds-truncate" title="CardNumber">Card Number</div></th>
+            <th scope="col"><div class="slds-truncate" title="Cash">Cash</div></th>
+            <th scope="col"><div class="slds-truncate" title="Delete">Delete</div></th>
+        </tr>
+        </thead>
+        <tbody>
+        <aura:iteration items="{!v.cards}" var="card">
+            <tr>
+                <td><div class="slds-truncate" title="{!card.Name}">{!card.Name}</div></td>
+                <td><div class="slds-truncate" title="{!card.CardNumber}">{!card.CardNumber__c}</div></td>
+                <td><div class="slds-truncate" title="{!card.Cash}">{!card.Cash__c}</div></td>
+                <td>
+                    <form class="card-form" onsubmit="{!c.deleteCard}">
+                        <input type="hidden" value="{!card.Name}" class="card-name" />
+                        <lightning:button
+                                label="Delete"
+                                iconName="utility:delete"
+                                iconPosition="left"
+                                variant="destructive"
+                                type="submit"
+                        />
+                    </form>
+                </td>
+            </tr>
+        </aura:iteration>
+        </tbody>
+    </table>
+</aura:component>
