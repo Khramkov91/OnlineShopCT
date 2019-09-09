@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="154b95ce-2625-4e57-9106-a14dba6cd7e0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/EditOrder/EditOrder.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/EditOrder/EditOrder.cmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/EditOrder/EditOrderController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/EditOrder/EditOrderController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/EditOrder/EditOrderHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/EditOrder/EditOrderHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/OnlineShopCT/OnlineShopCT.app" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/OnlineShopCT/OnlineShopCT.app" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,8 +46,11 @@
                 <ConnectionWorkspaceSettings>
                   <option name="buildSuccessDatesBySourceRootRelativePath">
                     <map>
+                      <entry key="APEXCLASS:EDITORDERCONTROLLER" value="1568049164000" />
                       <entry key="APEXCLASS:TESTCLASS" value="1568027077000" />
                       <entry key="AURADEFINITIONBUNDLE:EDITACCOUNTINFO" value="1568026744518" />
+                      <entry key="AURADEFINITIONBUNDLE:EDITORDER" value="1568051167386" />
+                      <entry key="AURADEFINITIONBUNDLE:ONLINESHOPCT" value="1568037006109" />
                     </map>
                   </option>
                   <option name="lastBuildScope" value="CONTEXT" />
@@ -962,11 +969,19 @@
           </map>
         </option>
         <option name="retrieveAndMergeDefault" value="false" />
+        <option name="soqlQuerySettings">
+          <SoqlQuerySettings>
+            <option name="documentText" value="SELECT Id, Name FROM Account WHERE Name='Tolik Test'" />
+            <option name="splitterProportion" value="0.3963661" />
+          </SoqlQuerySettings>
+        </option>
       </ProjectWorkspaceSettings>
     </option>
   </component>
   <component name="ProjectId" id="1QazmbbRpfakfjUT9tliWhf8lyp" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
@@ -982,6 +997,20 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="JavaScript Debug.OnlineShopCT.app (1)">
+    <configuration name="OnlineShopCT.app (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="https://onlineshopct-dev-ed.my.salesforce.com/secur/frontdoor.jsp?sid=00D2v0000028ZLl!AQEAQKVYEhHB9922aINoh.IQJYE5eQnW6KHFTmhpmpw66NClye0c.dgUoz9wxsroGvVsX_o_JilwTzFRUHuqnlATRKwOrOwL&amp;retURL=/c/OnlineShopCT.app">
+      <method v="2" />
+    </configuration>
+    <configuration name="OnlineShopCT.app" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="https://onlineshopct-dev-ed.my.salesforce.com/secur/frontdoor.jsp?sid=00D2v0000028ZLl!AQEAQKVYEhHB9922aINoh.IQJYE5eQnW6KHFTmhpmpw66NClye0c.dgUoz9wxsroGvVsX_o_JilwTzFRUHuqnlATRKwOrOwL&amp;retURL=/c/OnlineShopCT.app">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.OnlineShopCT.app (1)" />
+        <item itemvalue="JavaScript Debug.OnlineShopCT.app" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -993,7 +1022,7 @@
       <option name="presentableId" value="Default" />
       <updated>1568023654871</updated>
       <workItem from="1568023657160" duration="74000" />
-      <workItem from="1568023740400" duration="1370000" />
+      <workItem from="1568023740400" duration="19523000" />
     </task>
     <servers />
   </component>
