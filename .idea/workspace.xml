@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="154b95ce-2625-4e57-9106-a14dba6cd7e0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/OnlineShop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/OnlineShop.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IlluminatedCloud/OnlineShop/OfflineSymbolTable.zip" beforeDir="false" afterPath="$PROJECT_DIR$/IlluminatedCloud/OnlineShop/OfflineSymbolTable.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/LoginController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/LoginController.cls" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +33,6 @@
                 <ConnectionWorkspaceSettings>
                   <option name="buildSuccessDatesBySourceRootRelativePath">
                     <map>
-                      <entry key="APEXCLASS:LOGINCONTROLLER" value="1568027251973" />
                     </map>
                   </option>
                 </ConnectionWorkspaceSettings>
@@ -49,9 +44,6 @@
     </option>
   </component>
   <component name="ProjectId" id="1QazmbbRpfakfjUT9tliWhf8lyp" />
-  <component name="ProjectReloadState">
-    <option name="STATE" value="1" />
-  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -80,9 +72,6 @@
       <option name="presentableId" value="Default" />
       <updated>1568023654871</updated>
       <workItem from="1568023657160" duration="74000" />
-      <workItem from="1568023740400" duration="32000" />
-      <workItem from="1568026577768" duration="1323000" />
-      <workItem from="1568033630198" duration="388000" />
     </task>
     <servers />
   </component>
@@ -94,9 +83,6 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
           </value>
         </entry>
       </map>
