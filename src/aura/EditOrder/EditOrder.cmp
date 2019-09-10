@@ -2,5 +2,18 @@
  - Created by user on 09-Sep-19.
  -->
 
-<aura:component description="EditOrder">
+<aura:component description="EditOrder" controller="EditOrderController">
+    <aura:handler value="{!this}" name="init" action="{!c.doInit}" />
+    <aura:attribute type="String" name="AccountLogin_Id" default="0012v00002UyBrrAAF" />
+    <aura:attribute type="List" name="ItemListTable" />
+    <lightning:layout class="slds-page-header slds-page-header--object-home">
+        <lightning:layoutItem>
+            <lightning:icon iconName="standard:scan_card" alternativeText="My Expenses"/>
+        </lightning:layoutItem>
+        <lightning:layoutItem padding="horizontal-small">
+            <div class="page-section page-header">
+                <h1 class="slds-text-heading--label">Edit order</h1>
+            </div>
+        </lightning:layoutItem>
+    </lightning:layout>
 </aura:component>

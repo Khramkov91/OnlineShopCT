@@ -1,7 +1,4 @@
-<!--
- - Created by user on 09-Sep-19.
- -->
 
-<aura:application description="LoginApp">
+<aura:application description="LoginApp" extends="force:slds">
     <c:LoginForm/>
 </aura:application>

@@ -9,4 +9,7 @@
             helper.registerAcc(component, acc);
         }
     },
+    closePopup : function(component, event, helper) {
+        component.destroy();
+    },
 })

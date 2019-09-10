@@ -5,32 +5,50 @@
     <aura:attribute name="accLogin"
                     type="String"/>
     <aura:attribute name="account"
-                    type="Account"/>
-
+                    type="Account"
+                    default="{'sobjectType' : 'Account', 'Login__c':'', 'Password__c':''}"/>
+    <aura:handler event="c:AccountCreateEvent"
+                  action="{!c.showToast}"/>
     <aura:handler name="init" value="{!this}"
                   action="{!c.doInit}"/>
     <div class="mainDiv">
-        <div class="back-ground">
-                  <lightning:input aura:id="LoginForm" label="Login"
-                                                 class="slds-input"
-                                                  name="login"
-                                                  value="{!v.account.Login__c}"
-                                                  required="true" />
-                  <lightning:input aura:id="LoginForm" label="Password"
+        <lightning:layout horizontalAlign="center" verticalAlign="center">
+            <div class="slds-modal__container" style="width: 65%;">
+                <div class="slds-modal__header">
+
+                    <h3>LOGIN</h3>
+
+                </div>
+
+                <div class="slds-modal__content slds-p-around--medium">
+
+                <lightning:layoutItem >
+                  <form class="slds-form-element_stacked">
+                    <lightning:input aura:id="LoginForm" label="Login"
+                                                    class="slds-input"
+                                                    name="login"
+                                                    value="{!v.account.Login__c}"
+                                                     required="true" />
+                    <lightning:input aura:id="LoginForm" label="Password"
                                                  class="slds-input"
                                                  name="password"
                                                  value="{!v.account.Password__c}"
                                                  required="true"/>
 
-                  <lightning:button label="Login" class="slds-button"
-                              onclick="{!c.loginClick}"
-                              iconPosition="left"/>
-                  <lightning:button label="Register" class="slds-button"
-                              onclick="{!c.regClick}"
-                              iconPosition="right"/>
+                    <lightning:button label="Login" class="slds-button"
+                                                  onclick="{!c.loginClick}"
+                                                  iconPosition="left"/>
+
+                    <lightning:button label="Register" class="slds-button"
+                                    onclick="{!c.regClick}"
+                                    variant="success"/>
                   <div aura:id="RegisterForm"
                       class="Registration"/>
+              </form>
+            </lightning:layoutItem>
+                    </div>
+            </div>
+        </lightning:layout>
 
-        </div>
     </div>
 </aura:component>

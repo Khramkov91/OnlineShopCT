@@ -4,7 +4,7 @@ public class RegisterController {
         account = new Account();
         addAccount();
     }
-    public void addAccount(){
+    public String addAccount(){
        Account accountNew = new Account(
            Name = account.Name,
            Phone = account.Phone,
@@ -12,5 +12,6 @@ public class RegisterController {
            Password__c = account.Password__c
         );
         insert accountNew;
+        return accountNew.Id;
       }
 }

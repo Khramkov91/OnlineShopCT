@@ -21,14 +21,15 @@
             var status = response.getState();
             acсount = response.getReturnValue();
             component.set("v.accLogin",acсount);
-            $A.createComponent("c:OrderConfirm", {'accLogin': acсount},
-                function (newComponent, status, errorMessage) {
-                    if (status === "SUCCESS") {
-                        var body = component.find("OrderConfirm");
-                        body.set("v.body", newComponent);
-                    }
-                }
-            );
+            console.log(acсount)
+            // $A.createComponent("c:OrderConfirm", {'accLogin': acсount},
+            //     function (newComponent, status, errorMessage) {
+            //         if (status === "SUCCESS") {
+            //             var body = component.find("OrderConfirm");
+            //             body.set("v.body", newComponent);
+            //         }
+            //     }
+            // );
 
         });
         $A.enqueueAction(acсount);
