@@ -1,23 +1,36 @@
 <aura:component description = "LoginForm" 
                 controller="LoginController"
                 implements = "flexipage:availableForAllPageTypes">
-                
-    <aura:attribute name="accLogin" type="Account"/>
+
+    <aura:attribute name="accLogin"
+                    type="String"/>
+    <aura:attribute name="account"
+                    type="Account"/>
+
+    <aura:handler name="init" value="{!this}"
+                  action="{!c.doInit}"/>
     <div class="mainDiv">
-        <lightning:input aura:id="LoginForm" label="Login"
-                     name="login"
-                     value="{!v.accLogin.Login__c}"
-                     required="true"/>
-        <lightning:input aura:id="LoginForm" label="Password"
-                     name="login"
-                     value="{!v.accLogin.Password__c}"
-                     required="true"/>
-    
-        <lightning:button label="Login"
-                          onclick="{!c.loginClick}"/>
-        <lightning:button label="Register"
-                          onclick="{!c.regClick}"/>
-        <div aura:id="Registation"
-             class="Registration"/>
+        <div class="back-ground">
+                  <lightning:input aura:id="LoginForm" label="Login"
+                                                 class="slds-input"
+                                                  name="login"
+                                                  value="{!v.account.Login__c}"
+                                                  required="true" />
+                  <lightning:input aura:id="LoginForm" label="Password"
+                                                 class="slds-input"
+                                                 name="password"
+                                                 value="{!v.account.Password__c}"
+                                                 required="true"/>
+
+                  <lightning:button label="Login" class="slds-button"
+                              onclick="{!c.loginClick}"
+                              iconPosition="left"/>
+                  <lightning:button label="Register" class="slds-button"
+                              onclick="{!c.regClick}"
+                              iconPosition="right"/>
+                  <div aura:id="RegisterForm"
+                      class="Registration"/>
+
+        </div>
     </div>
 </aura:component>

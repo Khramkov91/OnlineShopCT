@@ -2,27 +2,37 @@
                 controller="RegisterController"
                 implements = "flexipage:availableForAllPageTypes" >
      <aura:attribute name="accReg" type="Account"/>
-     <div class="mainDiv">
-	   <lightning:input aura:id="regForm" label="Name"
+     <aura:attribute name="accountId" type="String"/>
+     <div class="back-ground">
+
+       <div class="form-to-popup">
+           <lightning:input aura:id="regForm" label="Name"
                      name="name"
                      value="{!v.accReg.Name}"
                      required="true"/>
-       <lightning:input aura:id="regForm" label="Phone"
+          <lightning:input aura:id="regForm" label="Phone"
                      name="phone"
                      value="{!v.accReg.Phone}"
                      required="true"/>
-       <lightning:input aura:id="regForm" label="Login"
+          <lightning:input aura:id="regForm" label="Login"
                      name="login"
                      value="{!v.accReg.Login__c}"
                      required="true"/>
-       <lightning:input aura:id="regForm" label="Password"
+          <lightning:input aura:id="regForm" label="Password"
                      name="password"
                      value="{!v.accReg.Password__c}"
                      required="true"/>
-       <lightning:button label="Register"
-                          onclick="{!c.registerAcc}"/>
+          <lightning:button label="Register"
+                            onclick="{!c.registerAcc}"
+                            value="{!acc}"/>
+           <lightning:button label="Cancel"
+                             onclick="{!c.closePopup}"
+                             value="{!acc}"/>
          
-         <div aura:id="Registation"
+          <div aura:id="RegisterForm"
              class="Registration"/>
+
+       </div>
+
     </div>
 </aura:component>
