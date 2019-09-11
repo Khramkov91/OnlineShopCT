@@ -1,36 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4327deda-52b5-403a-8bb2-016f77271f26" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Lectures/Lightning/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lectures/Lightning/.idea/Lightning.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lectures/Lightning/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lectures/Lightning/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lectures/Lightning/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Prob/.idea/Prob.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Prob/force-app/main/default/aura/AccountListView/AccountListView.cmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Prob/force-app/main/default/aura/AccountListView/AccountListView.cmp-meta.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Prob/force-app/main/default/aura/AccountListView/AccountListViewController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Prob/force-app/main/default/aura/AccountListView/AccountListViewHelper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Prob/force-app/main/default/aura/TestLightningComponent/TestLightningComponent.cmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Prob/force-app/main/default/aura/TestLightningComponent/TestLightningComponent.cmp-meta.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Prob/force-app/main/default/aura/TestLightningComponent/TestLightningComponent.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Prob/force-app/main/default/aura/TestLightningComponent/TestLightningComponentController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Prob/force-app/main/default/aura/TestLightningComponent/TestLightningComponentHelper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Prob/force-app/main/default/classes/TestLightningController.cls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Prob/force-app/main/default/classes/TestLightningController.cls-meta.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProbProject/.idea/ProbProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/OnlineShop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/OnlineShop.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/AccountList/AccountList.cmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/AccountList/AccountList.cmp-meta.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/AccountList/AccountListController.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/AccountList/AccountListHelper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/OnlineShopCT/OnlineShopCT.app" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/OnlineShopCT/OnlineShopCT.app" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/Paymentforgoods/Paymentforgoods.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/Paymentforgoods/Paymentforgoods.cmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/Paymentforgoods/PaymentforgoodsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/Paymentforgoods/PaymentforgoodsController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/Paymentforgoods/PaymentforgoodsHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/Paymentforgoods/PaymentforgoodsHelper.js" afterDir="false" />
-    </list>
+    <list default="true" id="4327deda-52b5-403a-8bb2-016f77271f26" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +55,7 @@
                       <entry key="APEXCLASS:PAYMENTFORGOODSCONTROLLER" value="1568024568318" />
                       <entry key="AURADEFINITIONBUNDLE:ACCOUNTLIST" value="1568021340953" />
                       <entry key="AURADEFINITIONBUNDLE:ONLINESHOPCT" value="1568036757861" />
-                      <entry key="AURADEFINITIONBUNDLE:PAYMENTFORGOODS" value="1568039779219" />
+                      <entry key="AURADEFINITIONBUNDLE:PAYMENTFORGOODS" value="1568192290750" />
                       <entry key="AURADEFINITIONBUNDLE:PAYMENTFORGOODSAPP" value="1568037204982" />
                     </map>
                   </option>
@@ -107,7 +78,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lectures/Lightning" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -121,10 +93,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.PaymentforgoodsApp.app (3)">
-    <configuration name="OnlineShopCT.app (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="https://ap15.salesforce.com/secur/frontdoor.jsp?sid=00D2v0000028ZLl!AQEAQKVYEhHB9922aINoh.IQJYE5eQnW6KHFTmhpmpw66NClye0c.dgUoz9wxsroGvVsX_o_JilwTzFRUHuqnlATRKwOrOwL&amp;retURL=/c/OnlineShopCT.app">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.PaymentforgoodsApp.app (5)">
     <configuration name="PaymentforgoodsApp.app (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="https://ap15.salesforce.com/secur/frontdoor.jsp?sid=00D2v0000028ZLl!AQEAQKVYEhHB9922aINoh.IQJYE5eQnW6KHFTmhpmpw66NClye0c.dgUoz9wxsroGvVsX_o_JilwTzFRUHuqnlATRKwOrOwL&amp;retURL=/c/PaymentforgoodsApp.app">
       <method v="2" />
     </configuration>
@@ -134,16 +103,19 @@
     <configuration name="PaymentforgoodsApp.app (3)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="https://ap15.salesforce.com/secur/frontdoor.jsp?sid=00D2v0000028ZLl!AQEAQKVYEhHB9922aINoh.IQJYE5eQnW6KHFTmhpmpw66NClye0c.dgUoz9wxsroGvVsX_o_JilwTzFRUHuqnlATRKwOrOwL&amp;retURL=/c/PaymentforgoodsApp.app">
       <method v="2" />
     </configuration>
-    <configuration name="PaymentforgoodsApp.app" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="https://ap15.salesforce.com/secur/frontdoor.jsp?sid=00D2v0000028ZLl!AQEAQKVYEhHB9922aINoh.IQJYE5eQnW6KHFTmhpmpw66NClye0c.dgUoz9wxsroGvVsX_o_JilwTzFRUHuqnlATRKwOrOwL&amp;retURL=/c/PaymentforgoodsApp.app">
+    <configuration name="PaymentforgoodsApp.app (4)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="https://ap15.salesforce.com/secur/frontdoor.jsp?sid=00D2v0000028ZLl!AQEAQKVYEhHB9922aINoh.IQJYE5eQnW6KHFTmhpmpw66NClye0c.dgUoz9wxsroGvVsX_o_JilwTzFRUHuqnlATRKwOrOwL&amp;retURL=/c/PaymentforgoodsApp.app">
+      <method v="2" />
+    </configuration>
+    <configuration name="PaymentforgoodsApp.app (5)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="https://onlineshopct-dev-ed.my.salesforce.com/secur/frontdoor.jsp?sid=00D2v0000028ZLl!AQEAQO_PE2Run33_9rkDw.aOmj5P7gw6tTFf76F9c.vYeOOHc4RonnCd7wscHvBQRkR_TdMKt_XW7C_w8uqxmMcpC7s0bNO.&amp;retURL=/c/PaymentforgoodsApp.app">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.PaymentforgoodsApp.app (5)" />
+        <item itemvalue="JavaScript Debug.PaymentforgoodsApp.app (4)" />
         <item itemvalue="JavaScript Debug.PaymentforgoodsApp.app (3)" />
         <item itemvalue="JavaScript Debug.PaymentforgoodsApp.app (2)" />
         <item itemvalue="JavaScript Debug.PaymentforgoodsApp.app (1)" />
-        <item itemvalue="JavaScript Debug.PaymentforgoodsApp.app" />
-        <item itemvalue="JavaScript Debug.OnlineShopCT.app (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -159,6 +131,7 @@
       <updated>1568017636741</updated>
       <workItem from="1568017638256" duration="116000" />
       <workItem from="1568017800574" duration="12707000" />
+      <workItem from="1568064384312" duration="9271000" />
     </task>
     <servers />
   </component>
