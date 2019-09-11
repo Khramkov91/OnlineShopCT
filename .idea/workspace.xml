@@ -5,8 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/EditOrder/EditOrder.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/EditOrder/EditOrder.cmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/EditOrder/EditOrderController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/EditOrder/EditOrderController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/EditOrder/EditOrderHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/EditOrder/EditOrderHelper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/EditOrderController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/EditOrderController.cls" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +16,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Apex Class" />
+        <option value="Lightning Style" />
+        <option value="Lightning Component" />
         <option value="Apex Metadata" />
+        <option value="Lightning Controller" />
       </list>
     </option>
   </component>
@@ -55,8 +56,9 @@
                       <entry key="APEXCLASS:EDITORDERCONTROLLER" value="1568119406000" />
                       <entry key="APEXCLASS:TESTCLASS" value="1568027077000" />
                       <entry key="AURADEFINITIONBUNDLE:EDITACCOUNTINFO" value="1568026744518" />
-                      <entry key="AURADEFINITIONBUNDLE:EDITORDER" value="1568184155984" />
+                      <entry key="AURADEFINITIONBUNDLE:EDITORDER" value="1568210256200" />
                       <entry key="AURADEFINITIONBUNDLE:ONLINESHOPCT" value="1568037006109" />
+                      <entry key="AURADEFINITIONBUNDLE:TABLEITEM" value="1568204758414" />
                     </map>
                   </option>
                   <option name="lastBuildScope" value="CONTEXT" />
@@ -1045,7 +1047,7 @@
       <workItem from="1568023657160" duration="74000" />
       <workItem from="1568023740400" duration="19881000" />
       <workItem from="1568099897652" duration="27072000" />
-      <workItem from="1568184033840" duration="2349000" />
+      <workItem from="1568184033840" duration="18702000" />
     </task>
     <servers />
   </component>

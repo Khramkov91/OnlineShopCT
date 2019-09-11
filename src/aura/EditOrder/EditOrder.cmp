@@ -4,7 +4,6 @@
 
 <aura:component description="EditOrder" controller="EditOrderController">
     <aura:handler value="{!this}" name="init" action="{!c.doInit}"/>
-    <aura:handler value="{!this}" name="init" action="{!c.getCatalogItems}"/>
     <aura:attribute type="Integer" name="fullCost" />
     <aura:attribute type="Boolean" name="isTruth" default="false"/>
     <aura:attribute type="Account" name="editAccount" default="{'sobjectType': 'Account'}"/> <!-- New account -->
@@ -13,7 +12,7 @@
 
     <lightning:layout class="slds-page-header slds-page-header--object-home">
         <lightning:layoutItem>
-            <lightning:icon iconName="standard:scan_card" alternativeText="My Expenses"/>
+            <lightning:icon iconName="standard:scan_card" alternativeText="Edit order"/>
         </lightning:layoutItem>
         <lightning:layoutItem padding="horizontal-small">
             <div class="page-section page-header">
@@ -23,15 +22,27 @@
     </lightning:layout>
 
     <lightning:layout>
-        <lightning:input aura:id="accField" value="{!v.editAccount.Name}" label="Name" type="text" maxlength="16"/>
-        <lightning:input aura:id="accField" value="{!v.editAccount.Phone}"
-                         label="Phone number"
-                         type="tel"
-                         pattern="[+]{1}[0-9]{12}"/>
-        <lightning:button name="myBtn" label="Edit" onclick="{!c.saveAccInfo}" />
-        <aura:if isTrue="{!v.isTruth}">
-            <p>Info saved</p>
-        </aura:if>
+        <div class="slds-grid slds-grid_vertical">
+            <div class="slds-col">
+                <lightning:input aura:id="accField"
+                                 value="{!v.editAccount.Name}"
+                                 label="Name" type="text"
+                                 maxlength="16"
+                                 required="true"/>
+                <lightning:input aura:id="accField"
+                                 value="{!v.editAccount.Phone}"
+                                 label="Phone number"
+                                 type="tel"
+                                 pattern="[+]{1}[0-9]{12}"
+                                 required="true"/>
+                <lightning:button variant="brand"
+                                  label="Edit"
+                                  onclick="{!c.saveAccInfo}"/>
+            </div>
+            <aura:if isTrue="{!v.isTruth}">
+                <p id="fadeout">Info saved</p>
+            </aura:if>
+        </div>
     </lightning:layout>
 
     <table class="slds-table slds-table_bordered slds-table_striped slds-table_cell-buffer slds-table_fixed-layout">
@@ -49,7 +60,7 @@
             <tr>
                 <td><div class="slds-truncate" title="{!ct.Name}">{!ct.Name}</div></td>
                 <td><div class="slds-truncate" title="{!ct.Category__c}">{!ct.Category__c}</div></td>
-                <td><div class="slds-truncate" title="{!ct.Cost__c}">{!ct.Cost__c}</div></td>
+                <td><div class="slds-truncate" title="{!ct.Cost__c}">{!ct.Cost__c} $</div></td>
                 <td><div class="slds-truncate" title="{!ct.Quantity__c}">{!ct.Quantity__c}</div></td>
                 <td><div class="slds-truncate" title="FullPrice">{!ct.Cost__c * ct.Quantity__c}</div></td>
             </tr>
