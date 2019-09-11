@@ -11,14 +11,18 @@
 		});
 		$A.enqueueAction(action);
 	},
-	registerAcc : function(component, event, helper) {
-		var reg = component.get("v.accReg");
+	registerAcc : function(component, acc) {
+	//	var reg = component.get("v.accReg");
+		console.log('acc helper', acc);
 		var action = component.get("c.addAccount");
-		action.setParams({reg1: reg});
+		action.setParams({account : acc});
 		action.setCallback(this, function (response) {
+			console.log('acc insert');
+			console.log('response.getState()' + response.getState());
 			var state = response.getState();
 			if (state === "SUCCESS") {
-				$A.get('e.force:AccountCreateEvent').fire();
+				alert('SUCCESS');
+				// $A.get('e.force:AccountCreateEvent').fire();
 			}else if (state === "ERROR") {
 				var errors = response.getError();
 				if (errors) {
@@ -33,10 +37,10 @@
 				}
 
 			}
-
+		component.destroy();
 		});
 		$A.enqueueAction(action);
-		component.destroy();
+
 	},
 
 	closePopup : function(component, event, helper) {

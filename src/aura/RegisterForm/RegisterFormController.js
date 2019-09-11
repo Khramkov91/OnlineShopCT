@@ -3,9 +3,10 @@
         helper.init(component);
     },
 	registerAcc : function(component, event, helper) {
-        var acc = event.getSourse().get('v.value');
+        var acc = component.get('v.accReg');
         console.log('acc', acc);
         if(acc){
+            console.log('acc', acc);
             helper.registerAcc(component, acc);
         }
     },
