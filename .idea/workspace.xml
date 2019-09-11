@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="154b95ce-2625-4e57-9106-a14dba6cd7e0" name="Default Changelist" comment="">
-
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/EditOrder/EditOrder.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/EditOrder/EditOrder.cmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/EditOrder/EditOrderController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/EditOrder/EditOrderController.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,7 +16,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Apex Class" />
+        <option value="Lightning Style" />
+        <option value="Lightning Component" />
         <option value="Apex Metadata" />
+        <option value="Lightning Controller" />
       </list>
     </option>
   </component>
@@ -35,6 +40,12 @@
     </option>
     <option name="projectWorkspaceSettings">
       <ProjectWorkspaceSettings>
+        <option name="anonymousApexSettings">
+          <AnonymousApexSettings>
+            <option name="apexLogLevel" value="FINEST" />
+            <option name="documentText" value="EditOrderController.getListOfProducts();" />
+          </AnonymousApexSettings>
+        </option>
         <option name="connectionWorkspaceSettings">
           <map>
             <entry key="OnlineShop">
@@ -42,7 +53,27 @@
                 <ConnectionWorkspaceSettings>
                   <option name="buildSuccessDatesBySourceRootRelativePath">
                     <map>
-
+                      <entry key="APEXCLASS:EDITORDERCONTROLLER" value="1568119406000" />
+                      <entry key="APEXCLASS:TESTCLASS" value="1568027077000" />
+                      <entry key="AURADEFINITIONBUNDLE:EDITACCOUNTINFO" value="1568026744518" />
+                      <entry key="AURADEFINITIONBUNDLE:EDITORDER" value="1568210256200" />
+                      <entry key="AURADEFINITIONBUNDLE:ONLINESHOPCT" value="1568037006109" />
+                      <entry key="AURADEFINITIONBUNDLE:TABLEITEM" value="1568204758414" />
+                    </map>
+                  </option>
+                  <option name="lastBuildScope" value="CONTEXT" />
+                  <option name="lastBuildViewToggles">
+                    <map>
+                      <entry key="RETRIEVE">
+                        <value>
+                          <BuildViewToggles>
+                            <option name="showLocalAndServer" value="true" />
+                            <option name="showLocalOnly" value="false" />
+                            <option name="showServerOnly" value="true" />
+                            <option name="showSubscribedOnly" value="true" />
+                          </BuildViewToggles>
+                        </value>
+                      </entry>
                     </map>
                   </option>
                 </ConnectionWorkspaceSettings>
@@ -946,13 +977,23 @@
           </map>
         </option>
         <option name="retrieveAndMergeDefault" value="false" />
+        <option name="soqlQuerySettings">
+          <SoqlQuerySettings>
+            <option name="documentText" value="" />
+            <option name="splitterProportion" value="0.3963661" />
+          </SoqlQuerySettings>
+        </option>
       </ProjectWorkspaceSettings>
     </option>
   </component>
   <component name="ProjectId" id="1QazmbbRpfakfjUT9tliWhf8lyp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Trailhead_Playground" />
     <property name="settings.editor.selected.configurable" value="IlluminatedCloudApplicationConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -967,6 +1008,32 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="JavaScript Debug.OnlineShopCT.app">
+    <configuration name="EditOrder.cmp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/OnlineShop/aura/EditOrder/EditOrder.cmp" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="OnlineShopCT.app (2)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="https://onlineshopct-dev-ed.my.salesforce.com/secur/frontdoor.jsp?sid=00D2v0000028ZLl!AQEAQOn0sFDDpOJBFoRo_l2BwKdWcQc_EIgia3dqRRRKdP8oJbwSVJpYIqrr0VCvbiKeZJcAPrQudkNAugRO_TL4419qfnxs&amp;retURL=/c/OnlineShopCT.app">
+      <method v="2" />
+    </configuration>
+    <configuration name="OnlineShopCT.app (3)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="https://onlineshopct-dev-ed.my.salesforce.com/secur/frontdoor.jsp?sid=00D2v0000028ZLl!AQEAQOn0sFDDpOJBFoRo_l2BwKdWcQc_EIgia3dqRRRKdP8oJbwSVJpYIqrr0VCvbiKeZJcAPrQudkNAugRO_TL4419qfnxs&amp;retURL=/c/OnlineShopCT.app">
+      <method v="2" />
+    </configuration>
+    <configuration name="OnlineShopCT.app (4)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="https://onlineshopct-dev-ed.my.salesforce.com/secur/frontdoor.jsp?sid=00D2v0000028ZLl!AQEAQO_PE2Run33_9rkDw.aOmj5P7gw6tTFf76F9c.vYeOOHc4RonnCd7wscHvBQRkR_TdMKt_XW7C_w8uqxmMcpC7s0bNO.&amp;retURL=/c/OnlineShopCT.app">
+      <method v="2" />
+    </configuration>
+    <configuration name="OnlineShopCT.app" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="https://onlineshopct-dev-ed.my.salesforce.com/secur/frontdoor.jsp?sid=00D2v0000028ZLl!AQEAQN_wxMvHpiaovXHEB1TBNuJNxYPbLU5hjflLyhbkZbbqy8RKbg8RzYcXVos2hX6ZGjodlOBgQKZuj2GcH_2OFWzAllLs&amp;retURL=/c/OnlineShopCT.app">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.OnlineShopCT.app" />
+        <item itemvalue="JavaScript Debug.OnlineShopCT.app (4)" />
+        <item itemvalue="JavaScript Debug.OnlineShopCT.app (3)" />
+        <item itemvalue="JavaScript Debug.EditOrder.cmp" />
+        <item itemvalue="JavaScript Debug.OnlineShopCT.app (2)" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -978,7 +1045,9 @@
       <option name="presentableId" value="Default" />
       <updated>1568023654871</updated>
       <workItem from="1568023657160" duration="74000" />
-
+      <workItem from="1568023740400" duration="19881000" />
+      <workItem from="1568099897652" duration="27072000" />
+      <workItem from="1568184033840" duration="18702000" />
     </task>
     <servers />
   </component>
@@ -990,6 +1059,9 @@
       <map>
         <entry key="MAIN">
           <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

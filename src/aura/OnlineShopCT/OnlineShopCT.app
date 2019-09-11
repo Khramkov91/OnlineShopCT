@@ -3,5 +3,5 @@
  -->
 
 <aura:application description="OnlineShopCT" extends="force:slds">
-    <c:AccountList />
+    <c:EditOrder AccountLogin_Id="0012v00002UyBrrAAF"/>
 </aura:application>

@@ -1,0 +1,11 @@
+/**
+ * Created by user on 11-Sep-19.
+ */
+
+.THIS {
+}
+
+.THIS #fadeout {
+    opacity: 1;
+    transition: 1s opacity;
+}
