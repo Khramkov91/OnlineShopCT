@@ -3,10 +3,6 @@
  */
 
 public with sharing class EditOrderController {
-    @AuraEnabled
-    public static Id getClientId() {
-        return '0012v00002UxQucAAF';
-    }
 
     @AuraEnabled
     public static Account getAccountById(String AccId) {
@@ -17,5 +13,10 @@ public with sharing class EditOrderController {
     public static Account saveAccount(Account acc) {
         update acc;
         return acc;
+    }
+
+    @AuraEnabled
+    public static List<Catalog__c> getListOfProducts() {
+        return [SELECT Id, Name, Quantity__c, Category__c, Cost__c FROM Catalog__c];
     }
 }

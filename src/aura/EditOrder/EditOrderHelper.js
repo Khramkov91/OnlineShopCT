@@ -8,7 +8,6 @@
         action.setParams({
             acc: newAccount
         });
-
         $A.enqueueAction(action);
     }
 });

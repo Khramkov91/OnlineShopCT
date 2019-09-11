@@ -3,9 +3,12 @@
  -->
 
 <aura:component description="EditOrder" controller="EditOrderController">
-    <aura:handler value="{!this}" name="init" action="{!c.doInit}" />
-    <aura:attribute type="Account" name="newAccount" default="{'sobjectType': 'Account'}"/> <!-- New account -->
-    <aura:attribute type="List" name="ProductItems" /> <!-- List of products from another component -->
+    <aura:handler value="{!this}" name="init" action="{!c.doInit}"/>
+    <aura:handler value="{!this}" name="init" action="{!c.getCatalogItems}"/>
+    <aura:attribute type="Integer" name="fullCost" />
+    <aura:attribute type="Boolean" name="isTruth" default="false"/>
+    <aura:attribute type="Account" name="editAccount" default="{'sobjectType': 'Account'}"/> <!-- New account -->
+    <aura:attribute type="Catalog__c[]" name="CatalogItems" /> <!-- List of products from another component -->
     <aura:attribute type="String" name="AccountLogin_Id" default="0012v00002UyBrrAAF" /> <!--Logged user account id -->
 
     <lightning:layout class="slds-page-header slds-page-header--object-home">
@@ -20,11 +23,38 @@
     </lightning:layout>
 
     <lightning:layout>
-        <lightning:input aura:id="accField" value="{!v.newAccount.Name}" label="Name" type="text"/>
-        <lightning:input aura:id="accField" value="{!v.newAccount.Phone}"
+        <lightning:input aura:id="accField" value="{!v.editAccount.Name}" label="Name" type="text" maxlength="16"/>
+        <lightning:input aura:id="accField" value="{!v.editAccount.Phone}"
                          label="Phone number"
                          type="tel"
                          pattern="[+]{1}[0-9]{12}"/>
-        <lightning:button label="Edit" onclick="{!c.saveAccInfo}"/>
+        <lightning:button name="myBtn" label="Edit" onclick="{!c.saveAccInfo}" />
+        <aura:if isTrue="{!v.isTruth}">
+            <p>Info saved</p>
+        </aura:if>
     </lightning:layout>
+
+    <table class="slds-table slds-table_bordered slds-table_striped slds-table_cell-buffer slds-table_fixed-layout">
+        <thead>
+        <tr class="slds-text-heading_label">
+            <th scope="col"><div class="slds-truncate" title="Name">Name</div></th>
+            <th scope="col"><div class="slds-truncate" title="Category">Category</div></th>
+            <th scope="col"><div class="slds-truncate" title="Cost">Cost</div></th>
+            <th scope="col"><div class="slds-truncate" title="Quantity">Quantity</div></th>
+            <th scope="col"><div class="slds-truncate" title="FullPrice">Full Price</div></th>
+        </tr>
+        </thead>
+        <tbody>
+        <aura:iteration items="{!v.CatalogItems}" var="ct">
+            <tr>
+                <td><div class="slds-truncate" title="{!ct.Name}">{!ct.Name}</div></td>
+                <td><div class="slds-truncate" title="{!ct.Category__c}">{!ct.Category__c}</div></td>
+                <td><div class="slds-truncate" title="{!ct.Cost__c}">{!ct.Cost__c}</div></td>
+                <td><div class="slds-truncate" title="{!ct.Quantity__c}">{!ct.Quantity__c}</div></td>
+                <td><div class="slds-truncate" title="FullPrice">{!ct.Cost__c * ct.Quantity__c}</div></td>
+            </tr>
+        </aura:iteration>
+        </tbody>
+    </table>
+    <p>Full cost is: {!v.fullCost}</p>
 </aura:component>
