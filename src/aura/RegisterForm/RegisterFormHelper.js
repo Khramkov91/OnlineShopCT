@@ -12,23 +12,20 @@
 		$A.enqueueAction(action);
 	},
 	registerAcc : function(component, acc) {
-	//	var reg = component.get("v.accReg");
-		console.log('acc helper', acc);
 		var action = component.get("c.addAccount");
 		action.setParams({account : acc});
 		action.setCallback(this, function (response) {
-			console.log('acc insert');
-			console.log('response.getState()' + response.getState());
 			var state = response.getState();
 			if (state === "SUCCESS") {
-				alert('SUCCESS');
-				// $A.get('e.force:AccountCreateEvent').fire();
+				console.log('SUCCESS');
+				component.getEvent('c:AccountCreateEvent').fire();
+				component.destroy();
 			}else if (state === "ERROR") {
 				var errors = response.getError();
 				if (errors) {
 					if (errors[0] && errors[0].message) {
-						console.log("Error message: " +
-							errors[0].message);
+						alert(errors[0].message)
+						console.log("Error message: " + errors[0].message);
 					}
 				}
 				else {
@@ -37,7 +34,6 @@
 				}
 
 			}
-		component.destroy();
 		});
 		$A.enqueueAction(action);
 

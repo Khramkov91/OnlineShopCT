@@ -1,8 +1,11 @@
 public  class RegisterController {
 
     @AuraEnabled
-    public static String addAccount(Account account){
-        insert account;
-        return 'account.Id';
+    public static void addAccount(Account account){
+        try {
+            insert account;
+        }catch (DmlException e){
+            throw new AuraHandledException(e.getDmlMessage(0));
+        }
       }
 }

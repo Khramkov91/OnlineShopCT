@@ -1,52 +1,69 @@
 <aura:component description = "LoginForm" 
                 controller="LoginController"
                 implements = "flexipage:availableForAllPageTypes">
+    <aura:registerevent name="ShowToast" type = "c:AccountCreateEvent"/>
 
     <aura:attribute name="accLogin"
                     type="String"/>
     <aura:attribute name="account"
                     type="Account"
-                    default="{'sobjectType' : 'Account', 'Login__c':'', 'Password__c':''}"/>
-    <aura:handler event="c:AccountCreateEvent"
+                    default="{'sobjectType' : 'Account'}"/>
+    <aura:handler event="c:AccountCreateEvent" name="CreateAccount"
                   action="{!c.showToast}"/>
     <aura:handler name="init" value="{!this}"
                   action="{!c.doInit}"/>
     <div class="mainDiv">
         <lightning:layout horizontalAlign="center" verticalAlign="center">
-            <div class="slds-modal__container" style="width: 65%;">
+            <div class="slds-modal__container">
                 <div class="slds-modal__header">
-
-                    <h3>LOGIN</h3>
-
+                    <lightning:layoutItem>
+                        <lightning:icon iconName="standard:user" alternativeText="My Account"/>
+                    </lightning:layoutItem>
+                    <lightning:layoutItem padding="horizontal-small">
+                        <div class="page-section page-header">
+                            <h1 class="slds-text-heading--label">Account</h1>
+                            <h2 class="slds-text-heading--medium">My Account</h2>
+                        </div>
+                    </lightning:layoutItem>
                 </div>
 
                 <div class="slds-modal__content slds-p-around--medium">
 
-                <lightning:layoutItem >
-                  <form class="slds-form-element_stacked">
-                    <lightning:input aura:id="LoginForm" label="Login"
-                                                    class="slds-input"
-                                                    name="login"
-                                                    value="{!v.account.Login__c}"
-                                                     required="true" />
-                    <lightning:input aura:id="LoginForm" label="Password"
-                                                 class="slds-input"
-                                                 name="password"
-                                                 value="{!v.account.Password__c}"
-                                                 required="true"/>
+                    <lightning:layoutItem >
+                        <form class="slds-form-element_stacked">
+                                <lightning:input aura:id="LoginForm" label="Login"
+                                                                    type="email"
+                                                                    value="{!v.account.Login__c}"
+                                                                    placeholder="example@mail.com"
+                                                                    messageWhenPatternMismatch="Please, enter a valid login"
+                                                                    required="true" />
 
-                    <lightning:button label="Login" class="slds-button"
-                                                  onclick="{!c.loginClick}"
-                                                  iconPosition="left"/>
+                                <lightning:input aura:id="LoginForm" label="Password"
+                                                                     type="password"
+                                                                     minlength="8"
+                                                                     maxlength="12"
+                                                                     value="{!v.account.Password__c}"
+                                                                     required="true"/>
 
-                    <lightning:button label="Register" class="slds-button"
-                                    onclick="{!c.regClick}"
-                                    variant="success"/>
-                  <div aura:id="RegisterForm"
-                      class="Registration"/>
-              </form>
-            </lightning:layoutItem>
-                    </div>
+
+                               <div class="slds-modal__footer">
+                                        <lightning:layoutItem >
+
+
+                                                <lightning:button label="Login" class="slds-button"
+                                                                  onclick="{!c.loginClick}"
+                                                                  iconPosition="left"/>
+                                                <lightning:button label="Register" class="slds-button"
+                                                                  onclick="{!c.regClick}"
+                                                                  variant= "neutral"/>
+                                                <div aura:id="RegisterForm"
+                                                        class="Registration"/>
+
+                                        </lightning:layoutItem>
+                               </div>
+                            </form>
+                    </lightning:layoutItem>
+                </div>
             </div>
         </lightning:layout>
 

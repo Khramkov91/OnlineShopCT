@@ -2,58 +2,77 @@
                 controller="RegisterController"
                 implements = "flexipage:availableForAllPageTypes" >
      <aura:attribute name="accReg" type="Account" default="{'sobjectType' : 'Account'}" />
-
      <div class="back-ground">
           <div class="form-to-popup">
               <div class="slds-box">
+                    <lightning:layout class="slds-modal__header">
+                        <lightning:layoutItem>
+                                <lightning:icon iconName="standard:user" alternativeText="My Account"/>
+                        </lightning:layoutItem>
+                        <lightning:layoutItem padding="horizontal-small">
+                        <div class="page-section page-header">
+                          <h1 class="slds-text-heading--label">Account</h1>
+                          <h2 class="slds-text-heading--medium">Create Account</h2>
+                         </div>
+                        </lightning:layoutItem>
+                    </lightning:layout>
+                    <div class="slds-modal__content slds-p-around--medium">
+                        <lightning:layoutItem >
+                            <form class="slds-form-element_stacked">
+                                <lightning:input aura:id="regForm" label="Name"
+                                                                   name="name"
+                                                                   maxlength="50"
+                                                                   value="{!v.accReg.Name}"
+                                                                   required="true"/>
 
-                  <lightning:card iconName="action:new_contact" title="Create Account"/>
+                                <lightning:input aura:id="regForm" label="Phone"
+                                                                   type="tel"
+                                                                   pattern="[+]{1}[0-9]{12}"
+                                                                   placeholder="+375(__)___-__-__"
+                                                                   maxlength="17"
+                                                                   messageWhenPatternMismatch="Please, enter a valid number"
+                                                                   name="phone"
+                                                                   value="{!v.accReg.Phone}"
+                                                                   required="true"/>
+                                <lightning:input aura:id="regForm" label="Login"
+                                                                   name="login"
+                                                                   type="email"
+                                                                   messageWhenPatternMismatch="Please, enter a valid email"
+                                                                   placeholder="example@mail.com"
+                                                                   value="{!v.accReg.Login__c}"
+                                                                   required="true"/>
 
-                  <div class="slds-p-horizontal--small">
-                      <div class="slds-size_6-of-12 slds-p-left_xx-large slds-p-horizontal_x-large " >
-                          <lightning:input aura:id="regForm" label="Name"
-                                                          name="name"
-                                                          value="{!v.accReg.Name}"
-                                                          required="true"/>
-                      </div>
-                      <div class="slds-size_6-of-12 slds-p-left_xx-large slds-p-horizontal_x-large " >
-                          <lightning:input aura:id="regForm" label="Phone"
-                                                          name="phone"
-                                                          value="{!v.accReg.Phone}"
-                                                          required="true"/>
-                      </div>
-                      <div class="slds-size_6-of-12 slds-p-left_xx-large slds-p-horizontal_x-large " >
-                          <lightning:input aura:id="regForm" label="Login"
-                                                          name="login"
-                                                          value="{!v.accReg.Login__c}"
-                                                          required="true"/>
-                      </div>
-                      <div class="slds-size_6-of-12 slds-p-left_xx-large slds-p-horizontal_x-large " >
-                      <lightning:input aura:id="regForm" label="Password"
-                                                          name="password"
-                                                          value="{!v.accReg.Password__c}"
-                                                          required="true"/>
-                      </div>
-                      <div class="slds-modal__footer">
-                      <lightning:button label="Register"
-                                         onclick="{!c.registerAcc}"
-                                        iconName="utility:check"
-                                        variant="success"
-                                         value="{!acc}"/>
-                       <lightning:button label="Cancel"
-                                         iconPosition="left"
-                                         iconName="utility:close"
-                                         variant="destructive"
-                                         onclick="{!c.closePopup}"
-                                         value="{!acc}"/>
-                      </div>
-         
+                                <lightning:helptext content="Password must contain letters, numbers and symbols. And have a length of 8-12 characters."/>
+
+                                <lightning:input aura:id="regForm" label="Password"
+                                                                     name="password"
+                                                                     type="password"
+                                                                     maxlength="20"
+                                                                     minlength="8"
+                                                                     messageWhenTooLong="The maximum number of characters is 20"
+                                                                     value="{!v.accReg.Password__c}"
+                                                                     required="true"/>
+                            </form>
+                        </lightning:layoutItem>
+                    </div>
+                    <div class="slds-modal__footer">
+                        <lightning:button label="Register"
+                                          onclick="{!c.registerAcc}"
+                                          iconName="utility:check"
+                                          variant="neutral"
+                                          value="{!acc}"/>
+                        <lightning:button label="Cancel"
+                                          iconPosition="left"
+                                          iconName="utility:close"
+                                          variant="neutral"
+                                          onclick="{!c.closePopup}"
+                                          value="{!acc}"/>
                         <div aura:id="RegisterForm"
-                                   class="Registration"/>
-                  </div>
+                           class="Registration"/>
+                    </div>
+               </div>
+           </div>
+     </div>
 
-              </div>
-       </div>
 
-    </div>
 </aura:component>

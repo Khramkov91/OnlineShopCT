@@ -1,4 +1,4 @@
-({
+ ({
     init : function(component) {
         var action = component.get("c.getAccount");
         action.setCallback(this,function(a){
@@ -11,17 +11,35 @@
         });
         $A.enqueueAction(action);
     },
-//Тут должна вызываться компонента с товарами OrderConfirm
+//Тут должна вызываться компонента с товарами 
     loginClick: function (component) {
         var login = component.get("v.account.Login__c");
         var password = component.get("v.account.Password__c");
         var acсount = component.get("c.checkLogin");
-        acсount.setParams({login:login,password:password});
+
+        acсount.setParams({
+            login:login,
+            password: password});
         acсount.setCallback(this, function(response) {
-            var status = response.getState();
             acсount = response.getReturnValue();
             component.set("v.accLogin",acсount);
-            console.log(acсount)
+            alert(acсount)
+            var state = response.getState();
+            console.log(state);
+
+            // if (state === "SUCCESS") {
+            //
+            //     if (acсount == null) {
+            //         var toastEvent = $A.get("e.force:showToast");
+            //         toastEvent.setParams({
+            //             "title": "No Accounts Found",
+            //             "message": "Such an account does not exist"
+            //         });
+            //         toastEvent.fire();
+            //     }else if (acсount){
+            //
+            //     }
+            // }
             // $A.createComponent("c:OrderConfirm", {'accLogin': acсount},
             //     function (newComponent, status, errorMessage) {
             //         if (status === "SUCCESS") {

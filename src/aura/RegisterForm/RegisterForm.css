@@ -1,4 +1,11 @@
-
+.THIS .slds-modal__header{
+    background-color: darkturquoise;
+    color: white;
+}
+.THIS .slds-modal__footer{
+    background-color: darkturquoise;
+    color: white;
+}
 .THIS.back-ground{
     z-index: 3;
     background: rgba(0,0,0,0.3);
