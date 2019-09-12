@@ -1,8 +1,0 @@
-<!--
- - Created by user on 10-Sep-19.
- -->
-
-<aura:event type="APPLICATION" description="AccountCreateEvent">
-    <aura:attribute name="message" type="String"/>
-    <aura:attribute name="title" type="String"/>
-</aura:event>

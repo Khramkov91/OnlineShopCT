@@ -18,8 +18,7 @@
 			var state = response.getState();
 			if (state === "SUCCESS") {
 				console.log('SUCCESS');
-				component.getEvent('c:AccountCreateEvent').fire();
-				component.destroy();
+				alert('Account was successfully created!');
 			}else if (state === "ERROR") {
 				var errors = response.getError();
 				if (errors) {
@@ -32,8 +31,8 @@
 					console.log(response.getReturnValue());
 
 				}
-
 			}
+			component.destroy();
 		});
 		$A.enqueueAction(action);
 

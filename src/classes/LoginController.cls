@@ -1,9 +1,5 @@
 public with sharing class LoginController {
     @AuraEnabled
-    public static List<Account> getAccount(){
-        return new List<Account>();
-    }
-    @AuraEnabled
     public static String checkLogin(String login, String password){
         List<Account> accounts = [
                                     SELECT

@@ -1,17 +1,11 @@
 <aura:component description = "LoginForm" 
                 controller="LoginController"
                 implements = "flexipage:availableForAllPageTypes">
-    <aura:registerevent name="ShowToast" type = "c:AccountCreateEvent"/>
-
     <aura:attribute name="accLogin"
                     type="String"/>
     <aura:attribute name="account"
                     type="Account"
                     default="{'sobjectType' : 'Account'}"/>
-    <aura:handler event="c:AccountCreateEvent" name="CreateAccount"
-                  action="{!c.showToast}"/>
-    <aura:handler name="init" value="{!this}"
-                  action="{!c.doInit}"/>
     <div class="mainDiv">
         <lightning:layout horizontalAlign="center" verticalAlign="center">
             <div class="slds-modal__container">

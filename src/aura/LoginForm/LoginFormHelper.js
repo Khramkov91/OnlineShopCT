@@ -1,17 +1,5 @@
  ({
-    init : function(component) {
-        var action = component.get("c.getAccount");
-        action.setCallback(this,function(a){
-            var state = a.getState();
-            console.log(state);
-            if(state == "SUCCESS"){
-                console.log('a.getReturnValue', a.getReturnValue());
-                component.set("v.accLogin", a.getReturnValue());
-            }
-        });
-        $A.enqueueAction(action);
-    },
-//Тут должна вызываться компонента с товарами 
+//Тут должна вызываться компонента с товарами
     loginClick: function (component) {
         var login = component.get("v.account.Login__c");
         var password = component.get("v.account.Password__c");
@@ -23,32 +11,14 @@
         acсount.setCallback(this, function(response) {
             acсount = response.getReturnValue();
             component.set("v.accLogin",acсount);
-            alert(acсount)
             var state = response.getState();
             console.log(state);
 
-            // if (state === "SUCCESS") {
-            //
-            //     if (acсount == null) {
-            //         var toastEvent = $A.get("e.force:showToast");
-            //         toastEvent.setParams({
-            //             "title": "No Accounts Found",
-            //             "message": "Such an account does not exist"
-            //         });
-            //         toastEvent.fire();
-            //     }else if (acсount){
-            //
-            //     }
-            // }
-            // $A.createComponent("c:OrderConfirm", {'accLogin': acсount},
-            //     function (newComponent, status, errorMessage) {
-            //         if (status === "SUCCESS") {
-            //             var body = component.find("OrderConfirm");
-            //             body.set("v.body", newComponent);
-            //         }
-            //     }
-            // );
-
+            if (state === "SUCCESS") {
+               alert(acсount)
+            }else {
+                alert('Please, check the entered data!')
+            }
         });
         $A.enqueueAction(acсount);
     },

@@ -15,13 +15,4 @@
         component.destroy();
     },
 
-
-    showToast : function(component, event, helper) {
-        var resultsToast = $A.get("e.force:showToast");
-        resultsToast.setParams({
-            "title": event.getParam('title'),
-            "message": event.getParam('message')
-        });
-        resultsToast.fire();
-    }
 })
