@@ -28,7 +28,6 @@
             let fullCost = 0;
             if (state === "SUCCESS") {
                 component.set("v.CatalogItems", response.getReturnValue());
-                console.log(response.getReturnValue());
                 for (let i = 0; i < response.getReturnValue().length; i++) {
                     fullCost += response.getReturnValue()[i].Quantity__c * response.getReturnValue()[i].Cost__c;
                 }
@@ -60,6 +59,25 @@
             }
 
             setTimeout(fadeout, 2000);
+        }
+
+        let test = JSON.parse(JSON.stringify(component.get("v.CatalogItems")));
+    },
+
+    deleteRecord: function (component, event, helper) {
+        let deleteItems = JSON.parse(JSON.stringify(component.get("v.deletedItems")));
+        let fullCost = component.get("v.fullCost");
+        let recId = event.getSource().get("v.value");
+        let allRecs = JSON.parse(JSON.stringify(component.get("v.CatalogItems")));
+        for(let i = 0; i < allRecs.length; i++) {
+            if (allRecs[i].Id === recId) {
+                fullCost -= (allRecs[i].Quantity__c * allRecs[i].Cost__c);
+                deleteItems.push(allRecs.splice(i, 1));
+                component.set("v.deletedItems", deleteItems);
+                console.log(deleteItems);
+                component.set("v.CatalogItems", allRecs);
+                component.set("v.fullCost", fullCost);
+            }
         }
     }
 });

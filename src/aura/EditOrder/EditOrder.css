@@ -6,6 +6,18 @@
 }
 
 .THIS #fadeout {
+    font-size: 20px;
     opacity: 1;
     transition: 1s opacity;
+}
+
+.THIS#full-cost {
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+    color: aqua;
+}
+
+.THIS.table-margin {
+    margin-top: 40px;
 }

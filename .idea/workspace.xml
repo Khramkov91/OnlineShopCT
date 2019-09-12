@@ -4,6 +4,7 @@
     <list default="true" id="154b95ce-2625-4e57-9106-a14dba6cd7e0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/EditOrder/EditOrder.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/EditOrder/EditOrder.cmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/EditOrder/EditOrder.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/EditOrder/EditOrder.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/EditOrder/EditOrderController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/EditOrder/EditOrderController.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,7 +57,7 @@
                       <entry key="APEXCLASS:EDITORDERCONTROLLER" value="1568119406000" />
                       <entry key="APEXCLASS:TESTCLASS" value="1568027077000" />
                       <entry key="AURADEFINITIONBUNDLE:EDITACCOUNTINFO" value="1568026744518" />
-                      <entry key="AURADEFINITIONBUNDLE:EDITORDER" value="1568210256200" />
+                      <entry key="AURADEFINITIONBUNDLE:EDITORDER" value="1568285456000" />
                       <entry key="AURADEFINITIONBUNDLE:ONLINESHOPCT" value="1568037006109" />
                       <entry key="AURADEFINITIONBUNDLE:TABLEITEM" value="1568204758414" />
                     </map>
@@ -1008,11 +1009,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.OnlineShopCT.app">
+  <component name="RunManager" selected="JavaScript Debug.OnlineShopCT.app (1)">
     <configuration name="EditOrder.cmp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/OnlineShop/aura/EditOrder/EditOrder.cmp" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="OnlineShopCT.app (2)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="https://onlineshopct-dev-ed.my.salesforce.com/secur/frontdoor.jsp?sid=00D2v0000028ZLl!AQEAQOn0sFDDpOJBFoRo_l2BwKdWcQc_EIgia3dqRRRKdP8oJbwSVJpYIqrr0VCvbiKeZJcAPrQudkNAugRO_TL4419qfnxs&amp;retURL=/c/OnlineShopCT.app">
+    <configuration name="OnlineShopCT.app (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="https://onlineshopct-dev-ed.my.salesforce.com/secur/frontdoor.jsp?sid=00D2v0000028ZLl!AQEAQCIK9Zy_UpAW.u0B9s1_IKINNiMnDUHIHc89Kgf6bUcRp2YPdCW.FYNC559wRMF8acG8l45mP4lUSqqNp8ca_ktFP0VR&amp;retURL=/c/OnlineShopCT.app">
       <method v="2" />
     </configuration>
     <configuration name="OnlineShopCT.app (3)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="https://onlineshopct-dev-ed.my.salesforce.com/secur/frontdoor.jsp?sid=00D2v0000028ZLl!AQEAQOn0sFDDpOJBFoRo_l2BwKdWcQc_EIgia3dqRRRKdP8oJbwSVJpYIqrr0VCvbiKeZJcAPrQudkNAugRO_TL4419qfnxs&amp;retURL=/c/OnlineShopCT.app">
@@ -1026,11 +1027,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.OnlineShopCT.app (1)" />
         <item itemvalue="JavaScript Debug.OnlineShopCT.app" />
         <item itemvalue="JavaScript Debug.OnlineShopCT.app (4)" />
         <item itemvalue="JavaScript Debug.OnlineShopCT.app (3)" />
         <item itemvalue="JavaScript Debug.EditOrder.cmp" />
-        <item itemvalue="JavaScript Debug.OnlineShopCT.app (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -1047,7 +1048,8 @@
       <workItem from="1568023657160" duration="74000" />
       <workItem from="1568023740400" duration="19881000" />
       <workItem from="1568099897652" duration="27072000" />
-      <workItem from="1568184033840" duration="18702000" />
+      <workItem from="1568184033840" duration="26801000" />
+      <workItem from="1568275193159" duration="7177000" />
     </task>
     <servers />
   </component>

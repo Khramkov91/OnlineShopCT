@@ -4,6 +4,7 @@
 
 <aura:component description="EditOrder" controller="EditOrderController">
     <aura:handler value="{!this}" name="init" action="{!c.doInit}"/>
+    <aura:attribute type="Catalog__c[]" name="deletedItems" />
     <aura:attribute type="Integer" name="fullCost" />
     <aura:attribute type="Boolean" name="isTruth" default="false"/>
     <aura:attribute type="Account" name="editAccount" default="{'sobjectType': 'Account'}"/> <!-- New account -->
@@ -31,12 +32,12 @@
                                  required="true"/>
                 <lightning:input aura:id="accField"
                                  value="{!v.editAccount.Phone}"
-                                 label="Phone number"
+                                 label="Phone number (Format: +37544123456)"
                                  type="tel"
-                                 pattern="[+]{1}[0-9]{12}"
+                                 pattern="[+]{1}[3]{1}[7]{1}[5]{1}[0-9]{9}"
                                  required="true"/>
                 <lightning:button variant="brand"
-                                  label="Edit"
+                                  label="Edit Info"
                                   onclick="{!c.saveAccInfo}"/>
             </div>
             <aura:if isTrue="{!v.isTruth}">
@@ -45,7 +46,7 @@
         </div>
     </lightning:layout>
 
-    <table class="slds-table slds-table_bordered slds-table_striped slds-table_cell-buffer slds-table_fixed-layout">
+    <table class="slds-table slds-table_bordered slds-table_striped slds-table_cell-buffer slds-table_fixed-layout table-margin">
         <thead>
         <tr class="slds-text-heading_label">
             <th scope="col"><div class="slds-truncate" title="Name">Name</div></th>
@@ -63,9 +64,16 @@
                 <td><div class="slds-truncate" title="{!ct.Cost__c}">{!ct.Cost__c} $</div></td>
                 <td><div class="slds-truncate" title="{!ct.Quantity__c}">{!ct.Quantity__c}</div></td>
                 <td><div class="slds-truncate" title="FullPrice">{!ct.Cost__c * ct.Quantity__c}</div></td>
+                <td><lightning:button
+                            name="deleteButton"
+                            variant="destructive"
+                            label="Delete"
+                            value="{!ct.Id}"
+                            onclick="{!c.deleteRecord}"/></td>
             </tr>
         </aura:iteration>
         </tbody>
     </table>
-    <p>Full cost is: {!v.fullCost}</p>
+    <p id="full-cost">Full cost is: {!v.fullCost}</p>
+    <lightning:button name="makeOrder" label="Make Order" variant="success" />
 </aura:component>
