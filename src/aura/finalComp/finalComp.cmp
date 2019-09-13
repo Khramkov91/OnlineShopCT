@@ -1,0 +1,27 @@
+<!--
+ - Created by user on 13-Sep-19.
+ -->
+
+<aura:component description="finalComp">
+    <aura:handler event="c:AccountCreateEvent" action="{!c.handlerAccount}"/>
+    <aura:handler event="c:inBasketEvent" action="{!c.handlerBasket}" />
+    <aura:handler event="c:makeOrderEvent" action="{!c.handlerOrder}" />
+    <aura:attribute type="Boolean" name="flagLoggedIn" default="false"/>
+    <aura:attribute type="Boolean" name="flagItemsAdded" default="false"/>
+    <aura:attribute type="Boolean" name="flagMakeOrder" default="false"/>
+    <aura:attribute type="String" name="Id" />
+    <aura:attribute type="Integer" name="fullCost" />
+    <aura:attribute type="Catalog__c[]" name="CatalogItems" />
+
+    <c:LoginForm  />
+
+    <aura:if isTrue="{!v.flagLoggedIn}">
+        <c:cotolog />
+    </aura:if>
+    <aura:if isTrue="{!v.flagItemsAdded}">
+        <c:EditOrder AccountLogin_Id="{!v.Id}" CatalogItems="{!v.CatalogItems}" />
+    </aura:if>
+    <aura:if isTrue="{!v.flagMakeOrder}">
+        <c:Paymentforgoods fullCost="{!v.fullCost}" accountId="{!v.Id}" />
+    </aura:if>
+</aura:component>

@@ -1,0 +1,91 @@
+<aura:component description="cotolog" controller="CotologController">
+    <aura:attribute name="cotologMain" type="Catalog__c[]" />
+    <aura:attribute name="basket" type="Catalog__c[]"  />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute type="String" name="accountId"/>
+    <aura:registerEvent name="BasketItems" type="c:inBasketEvent"/>
+
+        <form class="slds-form--stacked">
+            <lightning:input class="slds-input__icon" aura:id="inputFormMin" label="Min Cost"
+                         name="minCost" type="number" max="100" min="0"
+                         value=""/>
+            <lightning:input class="slds-input__icon" aura:id="inputFormMax" label="Max Cost"
+                         name="maxCost" type="number" max="100" min="0"
+                         value=""/>
+            <lightning:select class="slds-picklist--fluid" aura:id="category" name="Category" label="Category" required="false">
+                <option value="All">All Category</option>
+                <option value="Sex">Sex</option>
+                <option value="Products">Products</option>
+                <option value="Entertainment">Entertainment</option>
+            </lightning:select>
+            <lightning:button class="slds-button slds-button_brand" variant="brand" label="Search" onclick="{!c.changeList}" />
+
+
+        <table class="slds-table slds-table_bordered slds-table_striped slds-table_cell-buffer slds-table_fixed-layout">
+            <thead>
+             <tr class="slds-text-heading_label">
+                <th scope="col"><div class="slds-truncate" title="ID">ID</div></th>
+                <th scope="col"><div class="slds-truncate" title="Name">Name</div></th>
+                <th scope="col"><div class="slds-truncate" title="Category">Category</div></th>
+                <th scope="col"><div class="slds-truncate" title="Cost">Cost</div></th>
+                <th scope="col"><div class="slds-truncate" title="Quantity">Quantity</div></th>
+                <th scope="col"><div class="slds-truncate" title="AddInBasket">Add in Basket</div></th>
+             </tr>
+            </thead>
+            <tbody>
+            <aura:iteration items="{!v.cotologMain}" var="ct">
+                <tr>
+                    <th scope="row"><div class="slds-truncate" title="{!ct.Id}">{!ct.Id}</div></th>
+                    <td><div class="slds-truncate" aura:id="iter" title="{!ct.Name}">{!ct.Name}</div></td>
+                    <td><div class="slds-truncate" aura:id="iter" title="{!ct.Category__c}">{!ct.Category__c}</div></td>
+                    <td><div class="slds-truncate" aura:id="iter" title="{!ct.Cost__c}">{!ct.Cost__c} $</div></td>
+                    <td><div class="slds-truncate" aura:id="iter" title="{!ct.Quantity__c}">{!ct.Quantity__c}</div></td>
+
+                    <td>
+                        <lightning:button
+                                label="Add product"
+                                value="{!ct}"
+                                iconName="utility:new"
+                                variant="destructive"
+                                disabled="false"
+                                aura:id="{!cotologMain.Id}"
+                                onclick="{!c.addInBasket}"
+
+                        />
+                    </td>
+                </tr>
+            </aura:iteration>
+            </tbody>
+        </table>
+        </form>
+    <lightning:button class="slds-button slds-button_brand"
+                      variant="success"
+                      label="In Basket"
+                      onclick="{!c.inBasket}"
+                      iconName="custom:custom107"/>
+
+
+    <table class="slds-table slds-table_bordered slds-table_striped slds-table_cell-buffer slds-table_fixed-layout">
+        <thead>
+        <tr class="slds-text-heading_label">
+            <th scope="col"><div class="slds-truncate" title="ID">ID</div></th>
+            <th scope="col"><div class="slds-truncate" title="Name">Name</div></th>
+            <th scope="col"><div class="slds-truncate" title="Category">Category</div></th>
+            <th scope="col"><div class="slds-truncate" title="Cost">Cost</div></th>
+            <th scope="col"><div class="slds-truncate" title="Quantity">Quantity</div></th>
+        </tr>
+        </thead>
+        <tbody>
+        <aura:iteration items="{!v.basket}" var="ct">
+            <tr>
+                <th scope="row"><div class="slds-truncate" title="{!ct.Id}">{!ct.Id}</div></th>
+                <td><div class="slds-truncate" aura:id="iter" title="{!ct.Name}">{!ct.Name}</div></td>
+                <td><div class="slds-truncate" aura:id="iter" title="{!ct.Category__c}">{!ct.Category__c}</div></td>
+                <td><div class="slds-truncate" aura:id="iter" title="{!ct.Cost__c}">{!ct.Cost__c} $</div></td>
+                <td><div class="slds-truncate" aura:id="iter" title="{!ct.Quantity__c}">{!ct.Quantity__c}</div></td>
+
+            </tr>
+        </aura:iteration>
+        </tbody>
+    </table>
+</aura:component>

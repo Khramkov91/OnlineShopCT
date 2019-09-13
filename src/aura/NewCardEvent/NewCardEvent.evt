@@ -1,0 +1,10 @@
+<!--
+ - Created by Pavel on 11.09.2019.
+ -->
+
+<!--<aura:event type="APPLICATION" description="NewCardEvent">
+    <aura:attribute name="message" type="String"/>
+    <aura:attribute name="title" type="String"/>
+</aura:event>-->
+<aura:event type="COMPONENT">
+</aura:event>

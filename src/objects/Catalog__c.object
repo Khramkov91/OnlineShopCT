@@ -179,9 +179,9 @@
                     <label>Entertainment</label>
                 </value>
                 <value>
-                    <fullName>18+</fullName>
+                    <fullName>Sex</fullName>
                     <default>false</default>
-                    <label>18+</label>
+                    <label>Sex</label>
                 </value>
             </valueSetDefinition>
         </valueSet>

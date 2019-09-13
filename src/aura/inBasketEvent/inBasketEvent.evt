@@ -1,0 +1,7 @@
+<!--
+ - Created by user on 13-Sep-19.
+ -->
+
+<aura:event type="APPLICATION" description="inBasketEvent">
+    <aura:attribute type="Catalog__c[]" name="CatalogItems" />
+</aura:event>

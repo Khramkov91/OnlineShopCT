@@ -154,25 +154,25 @@
     <enableStreamingApi>true</enableStreamingApi>
     <fields>
         <fullName>AccountId__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
+        <deleteConstraint>Restrict</deleteConstraint>
         <externalId>false</externalId>
         <label>AccountId</label>
         <referenceTo>Account</referenceTo>
         <relationshipLabel>Account Cards</relationshipLabel>
         <relationshipName>Account_Cards</relationshipName>
-        <required>false</required>
+        <required>true</required>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
     <fields>
         <fullName>Card_Id__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
+        <deleteConstraint>Restrict</deleteConstraint>
         <externalId>false</externalId>
         <label>Card_Id</label>
         <referenceTo>Card__c</referenceTo>
         <relationshipLabel>Account Cards</relationshipLabel>
         <relationshipName>Account_Cards</relationshipName>
-        <required>false</required>
+        <required>true</required>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -183,8 +183,9 @@
         <label>All</label>
     </listViews>
     <nameField>
+        <displayFormat>OF-{0000}</displayFormat>
         <label>Account Card Name</label>
-        <type>Text</type>
+        <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Account Cards</pluralLabel>
     <searchLayouts/>

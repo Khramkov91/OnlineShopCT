@@ -12,10 +12,6 @@
         <label><!-- Category --></label>
         <name>Category__c</name>
         <picklistValues>
-            <masterLabel>18+</masterLabel>
-            <translation><!-- 18+ --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Entertainment</masterLabel>
             <translation><!-- Entertainment --></translation>
         </picklistValues>
@@ -26,6 +22,10 @@
         <picklistValues>
             <masterLabel>Products</masterLabel>
             <translation><!-- Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sex</masterLabel>
+            <translation><!-- Sex --></translation>
         </picklistValues>
     </fields>
     <fields>

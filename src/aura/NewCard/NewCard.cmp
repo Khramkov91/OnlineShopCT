@@ -1,0 +1,53 @@
+<!--
+ - Created by Pavel on 11.09.2019.
+ -->
+
+<aura:component description="NewCard" controller="NewCardController" implements = "flexipage:availableForAllPageTypes">
+    <aura:attribute name="Card" type="Card__c" default="{'sobjectType': 'Card__c'}"/>
+    <aura:attribute name="accId" type="String" default="0012v00002UxQucAAF"/>
+    <aura:registerEvent name="upCards" type="c:NewCardEvent"/>
+    <form class="back-ground">
+        <div class="form-to-popup">
+            <lightning:layout class="slds-page-header slds-page-header--object-home">
+                <lightning:layoutItem>
+                    <lightning:icon iconName="custom:custom40" alternativeText="Cards"/>
+                </lightning:layoutItem>
+                <lightning:layoutItem padding="horizontal-small">
+                    <div class="page-section page-header">
+                        <h1 class="slds-text-heading--label">Cards</h1>
+                        <h2 class="slds-text-heading--medium">New Cards</h2>
+                    </div>
+                </lightning:layoutItem>
+            </lightning:layout>
+            <lightning:input aura:id="cardField"
+                             name="Name"
+                             label="Card Name"
+                             value="{!v.Card.Name}"
+                             required="true"/>
+            <lightning:input aura:id="cardField"
+                             name="cardNumber"
+                             label="Card Number"
+                             value="{!v.Card.CardNumber__c}"
+                             maxlength="16"
+                             required="true"/>
+            <lightning:input aura:id="cardField"
+                             name="cardCash"
+                             label="Cash"
+                             value="{!v.Card.Cash__c}"
+                             pattern="[0-9]"
+                             maxlength="9"
+                             required="true"/>
+            <lightning:button label="Cancel"
+                              onclick="{!c.closePopup}"
+                              class="slds-m-top_medium" />
+            <lightning:button label="Save Card"
+                              onclick="{!c.handleSaveCard}"
+                              variant="brand"
+                              value="{!v.accId}"
+                              class="slds-m-top_medium"/>
+        </div>
+        <div aura:id="NewCard"
+             class="NewCard"/>
+    </form>
+
+</aura:component>

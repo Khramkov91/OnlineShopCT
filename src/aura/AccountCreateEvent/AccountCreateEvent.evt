@@ -1,0 +1,7 @@
+<!--
+ - Created by user on 10-Sep-19.
+ -->
+
+<aura:event type="APPLICATION" description="AccountCreateEvent">
+    <aura:attribute name="AccountId" type="String"/>
+</aura:event>

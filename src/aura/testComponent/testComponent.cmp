@@ -1,0 +1,10 @@
+<!--
+ - Created by user on 12-Sep-19.
+ -->
+
+<aura:component description="testComponent" implements="flexipage:availableForAllPageTypes" access="global">
+    <aura:handler event="c:makeOrderEvent" action="{!c.makeOrder}"/>
+    <aura:attribute name="fullCost" type="Integer" />
+    <p>Hello world</p>
+    <p>{!v.fullCost}</p>
+</aura:component>

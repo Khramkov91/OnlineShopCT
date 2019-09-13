@@ -1,8 +1,7 @@
 <!--
  - Created by user on 09-Sep-19.
  -->
-
-<aura:component description="EditOrder" controller="EditOrderController">
+<aura:component description="EditOrder" controller="EditOrderController" implements="flexipage:availableForAllPageTypes" access="global">
     <aura:handler value="{!this}" name="init" action="{!c.doInit}"/>
     <aura:attribute type="Catalog__c[]" name="deletedItems" />
     <aura:attribute type="Integer" name="fullCost" />
@@ -38,7 +37,8 @@
                                  required="true"/>
                 <lightning:button variant="brand"
                                   label="Edit Info"
-                                  onclick="{!c.saveAccInfo}"/>
+                                  onclick="{!c.saveAccInfo}"
+                                  disabled="{!v.isTruth}"/>
             </div>
             <aura:if isTrue="{!v.isTruth}">
                 <p id="fadeout">Info saved</p>
@@ -75,5 +75,5 @@
         </tbody>
     </table>
     <p id="full-cost">Full cost is: {!v.fullCost}</p>
-    <lightning:button name="makeOrder" label="Make Order" variant="success" />
+    <lightning:button name="makeOrder" label="Make Order" variant="success" onclick="{!c.makeOrder}"/>
 </aura:component>

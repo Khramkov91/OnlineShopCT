@@ -1,0 +1,18 @@
+<!--
+ - Created by user on 11-Sep-19.
+ -->
+
+<aura:component description="TableItem">
+    <aura:attribute type="Catalog__c" name="CatalogItem" />
+    <aura:attribute type="Catalog__c" name="BasketItem" default="{
+                                        'sobjectType': 'Catalog__c',
+                                        'Quantity__c': 0}"/>
+    <tr>
+        <td><div class="slds-truncate" title="{!v.CatalogItem.Name}">{!v.CatalogItem.Name}</div></td>
+        <td><div class="slds-truncate" title="{!v.CatalogItem.Category__c}">{!v.CatalogItem.Category__c}</div></td>
+        <td><div class="slds-truncate" title="{!v.CatalogItem.Cost__c}">{!v.CatalogItem.Cost__c} $</div></td>
+        <td><div class="slds-truncate" title="{!v.CatalogItem.Quantity__c}">{!v.CatalogItem.Quantity__c}</div></td>
+        <td><div class="slds-truncate" title="FullPrice">{!v.CatalogItem.Cost__c * v.CatalogItem.Quantity__c}</div></td>
+        <td><div><lightning:button variant="brand" label="Add" onclick="{!c.someFunc}"/></div></td>
+    </tr>
+</aura:component>

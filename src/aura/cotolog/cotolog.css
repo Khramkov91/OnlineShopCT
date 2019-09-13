@@ -1,0 +1,21 @@
+.THIS.slds-form--stacked{
+    width: 100%;
+    height: auto;
+    background: lightskyblue;
+    padding: 10px;
+    border-radius: 0.25rem;
+    left: 250px;
+    top: 20%;
+}
+.THIS .slds-button slds-button_brand{
+
+}
+.THIS .slds-input{
+    width: 25%;
+}
+.THIS .slds-picklist--fluid{
+    width: 25%;
+}
+.THIS .slds-button slds-button_brand{
+    align-content: center;
+}

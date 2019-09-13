@@ -1,0 +1,8 @@
+<!--
+ - Created by Pavel on 12.09.2019.
+ -->
+
+<aura:event type="APPLICATION" description="ComeFromEditOrder">
+    <aura:attribute name="AccId" type="Id"/>
+    <aura:attribute name="TotalCost" type="String"/>
+</aura:event>

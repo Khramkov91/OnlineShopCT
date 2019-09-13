@@ -1,16 +1,11 @@
-public class RegisterController {
-    public Account account {get; set;}
-    public RegisterController(){
-        account = new Account();
-        addAccount();
-    }
-    public void addAccount(){
-       Account accountNew = new Account(
-           Name = account.Name,
-           Phone = account.Phone,
-           Login__c = account.Login__c,
-           Password__c = account.Password__c
-        );
-        insert accountNew;
+public  class RegisterController {
+
+    @AuraEnabled
+    public static void addAccount(Account account){
+        try {
+            insert account;
+        }catch (DmlException e){
+            throw new AuraHandledException(e.getDmlMessage(0));
+        }
       }
 }

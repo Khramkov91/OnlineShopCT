@@ -183,8 +183,9 @@
         <label>All</label>
     </listViews>
     <nameField>
+        <displayFormat>A-{0}</displayFormat>
         <label>Catalog Order Name</label>
-        <type>Text</type>
+        <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Catalogs Orders</pluralLabel>
     <searchLayouts/>
