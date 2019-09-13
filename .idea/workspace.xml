@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="154b95ce-2625-4e57-9106-a14dba6cd7e0" name="Default Changelist" comment="" />
+    <list default="true" id="154b95ce-2625-4e57-9106-a14dba6cd7e0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/OnlineShop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/OnlineShop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IlluminatedCloud/Project1/OfflineSymbolTable.zip" beforeDir="false" afterPath="$PROJECT_DIR$/IlluminatedCloud/Project1/OfflineSymbolTable.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/cotolog/Cotolog.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/cotolog/Cotolog.cmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/cotolog/cotologController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/cotolog/cotologController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/cotolog/cotologHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/cotolog/cotologHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/CotologController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/CotologController.cls" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +31,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/OnlineShopCT" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IlluminatedCloudWorkspaceSettings">
     <option name="moduleWorkspaceSettings">
@@ -66,8 +74,8 @@
                       <entry key="APEXCLASS:ASDAS" value="1568029348918" />
                       <entry key="APEXCLASS:COTOLOGCONTROLLER" value="1568300163000" />
                       <entry key="APEXCLASS:RESTCAMPRESOURCE" value="1568129140282" />
-                      <entry key="AURADEFINITIONBUNDLE:CHECK" value="1568039718463" />
-                      <entry key="AURADEFINITIONBUNDLE:COTOLOG" value="1568368065000" />
+                      <entry key="AURADEFINITIONBUNDLE:CHECK" value="1568375642932" />
+                      <entry key="AURADEFINITIONBUNDLE:COTOLOG" value="1568377440034" />
                       <entry key="AURADEFINITIONBUNDLE:COTOLOGLIST" value="1568198358000" />
                       <entry key="AURADEFINITIONBUNDLE:INBASKETEVENT" value="1568369634000" />
                       <entry key="AURADEFINITIONBUNDLE:SEE" value="1568039633000" />
@@ -1049,7 +1057,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/Light/CTContactUpsert/CTContactUpsertController.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
@@ -1084,6 +1092,8 @@
       <workItem from="1568214018918" duration="27791000" />
       <workItem from="1568304829323" duration="1187000" />
       <workItem from="1568361667506" duration="8859000" />
+      <workItem from="1568375498062" duration="129000" />
+      <workItem from="1568375628765" duration="4807000" />
     </task>
     <servers />
   </component>

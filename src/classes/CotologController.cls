@@ -24,7 +24,5 @@ public with sharing class CotologController {
         }
         system.debug(queryLast);
         return queryLast;
-
-
     }
 }

@@ -5,12 +5,11 @@
         helper.sortByCost(component);
     },
     changeList: function (component, event, helper) {
-       /* let min = component.find('inputFormMin').get("v.value");
+        let min = component.find('inputFormMin').get("v.value");
         let max = component.find('inputFormMax').get("v.value");
-        let minn = component.find('inputFormMin');
         if (min > max) {
-            minn.set("v.errors", [{message: "Input not a number: "}]);
-        } else*/
+            alert("Min number cannot be more than Max");
+        } else
         helper.sortByCost(component);
 
     },
@@ -27,20 +26,20 @@
                         myBasket.push(catal);
                     }
                 } else {
-                    let count = 0;
-                    for (let i = 0; i < myBasket.length; i++) {
-                        if (myBasket[i].Id === catal.Id) {
-                            count++;
-                            for (let a = 0; a < allRecords.length; a++) {
-                                if (allRecords[a].Id === catal.Id) {
-                                    if(allRecords[a].Quantity__c != myBasket[i].Quantity__c) {
-                                        myBasket[i].Quantity__c += 1;
+                        let count = 0;
+                        for (let i = 0; i < myBasket.length; i++) {
+                            if (myBasket[i].Id === catal.Id) {
+                                count++;
+                                for (let a = 0; a < allRecords.length; a++) {
+                                    if (allRecords[a].Id === catal.Id) {
+                                        if(allRecords[a].Quantity__c != myBasket[i].Quantity__c) {
+                                            myBasket[i].Quantity__c += 1;
 
+                                        }
                                     }
                                 }
                             }
                         }
-                    }
                     if (count == 0) {
                         if(catal.Quantity__c > 0) {
                             catal.Quantity__c = 1;
