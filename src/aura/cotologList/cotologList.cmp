@@ -1,0 +1,23 @@
+<aura:component description="cotologList">
+    <aura:attribute name="cotologIter" type="Catalog__c"/>
+
+<tr>
+    <th scope="row"><div class="slds-truncate" title="{!cotologIter.Id}">{!cotologIter.Id}</div></th>
+    <td><div class="slds-truncate" aura:id="iter" title="{!cotologIter.Name}">{!cotologIter.Name}</div></td>
+    <td><div class="slds-truncate" aura:id="iter" title="{!cotologIter.Category__c}">{!cotologIter.Category__c}</div></td>
+    <td><div class="slds-truncate" aura:id="iter" title="{!cotologIter.Cost__c}">{!cotologIter.Cost__c} $</div></td>
+    <td><div class="slds-truncate" aura:id="iter" title="{!cotologIter.Quantity__c}">{!cotologIter.Quantity__c}</div></td>
+
+    <td>
+        <lightning:button
+                label="Add product"
+                iconName="utility:new"
+                variant="destructive"
+                disabled="false"
+                aura:id="{!cotologIter.Id}"
+                onclick="{!c.addInBasket}"
+
+        />
+    </td>
+</tr>
+</aura:component>

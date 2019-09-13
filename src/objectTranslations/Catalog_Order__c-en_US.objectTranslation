@@ -17,5 +17,15 @@
         <label><!-- Count --></label>
         <name>Count__c</name>
     </fields>
+    <fields>
+        <label><!-- OrderId --></label>
+        <name>OrderId__c</name>
+        <relationshipLabel><!-- Catalogs Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Order_Id --></label>
+        <name>Order_Id__c</name>
+        <relationshipLabel><!-- Catalogs Orders --></relationshipLabel>
+    </fields>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

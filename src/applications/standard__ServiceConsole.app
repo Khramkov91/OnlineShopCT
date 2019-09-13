@@ -183,7 +183,7 @@
     <tabs>Catalog__c</tabs>
     <tabs>Account_Card__c</tabs>
     <tabs>Catalog_Order__c</tabs>
-    <tabs>OrderCT__c</tabs>
+    <tabs>Order__c</tabs>
     <workspaceConfig>
         <mappings>
             <tab>Account_Card__c</tab>
@@ -198,7 +198,7 @@
             <tab>Catalog__c</tab>
         </mappings>
         <mappings>
-            <tab>OrderCT__c</tab>
+            <tab>Order__c</tab>
         </mappings>
         <mappings>
             <tab>standard-Account</tab>
